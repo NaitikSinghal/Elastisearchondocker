@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-es-image
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+
+volumes:
+  es_data:
+    driver: local
