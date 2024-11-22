@@ -27,4 +27,11 @@ docker-compose up -d
 ```bash
 curl -X GET "localhost:9200"
 ```
+### 3. Cluster status 
+
+![Cluster Health](cluster-status.png)
+
+### 4. localhost
+
+![localhost](localhost_9200.png)
 
