@@ -13,5 +13,18 @@ Before you begin, ensure that you have the following installed on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repository-name.git
+git clone https://github.com/NaitikSinghal/Elasticsearchondocker.git
+```
+
+### 2. Run the following commands
+
+```bash
+docker-compose build
+```
+```bash
+docker-compose up -d
+```
+```bash
+curl -X GET "localhost:9200"
+```
 
